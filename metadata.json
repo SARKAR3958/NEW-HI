@@ -1,0 +1,6 @@
+{
+  "name": "Hammer Industrial - Enterprise Commodity Trading & Cross-Border Logistics",
+  "description": "Connecting verified global buyers with Canadian and international supply chains. Enterprise commodity trading, heavy machinery parts, and cross-border logistics strategy.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

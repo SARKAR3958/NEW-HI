@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer utilities {
+  /* Custom Glowing Effects */
+  .glow-cyan {
+    box-shadow: 0 0 25px -5px rgba(0, 229, 255, 0.4);
+  }
+  .glow-cyan-sm {
+    box-shadow: 0 0 12px -2px rgba(0, 229, 255, 0.35);
+  }
+  .glow-gold {
+    box-shadow: 0 0 25px -5px rgba(255, 184, 0, 0.4);
+  }
+  .text-glow-cyan {
+    text-shadow: 0 0 18px rgba(0, 229, 255, 0.6);
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #02060D;
+}
+::-webkit-scrollbar-thumb {
+  background: #101B26;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #FFB800;
+}
+
+/* Glassmorphism Classes */
+.glass-panel {
+  background: rgba(2, 6, 13, 0.7);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.glass-pill {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.btn-glass-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-glass-hover:hover {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(8px);
+  border-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.3);
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+  background-color: #02060D;
+  color: #f3f4f6;
+}
